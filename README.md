@@ -34,7 +34,7 @@ docs/
 
 Each zettel:
 
-```markdown
+~~~markdown
 # Title (one idea)
 
 Explanation in own words.
@@ -55,7 +55,7 @@ Refs:
 Tags:
 
     #course-or-module-tag #topic-tag #exam-section
-```
+~~~
 
 > Note: current pyzet (0.14) stores zettels in `docs/` (its `ZETDIR` constant), so that is used here instead of
 > the older `zettels/` folder name, so that all pyzet commands work out of the box.
@@ -75,7 +75,7 @@ printf 'repo: ~/langchain-zettelkasten\neditor: vim\n' > ~/.config/pyzet/pyzet.y
 pyzet list                      # all notes, newest first
 pyzet tags                      # tag counts
 pyzet grep '#exam-deploy'       # every note for an exam section
-pyzet grep -i 'double texting'  # full-text search
+pyzet grep -t 'double texting'  # full-text search with titles
 pyzet print --id 20261014080200 # show one note
 pyzet add                       # write a new zettel (opens your editor, commits)
 ```
